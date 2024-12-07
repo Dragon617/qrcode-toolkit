@@ -204,7 +204,7 @@ watch(
         bg-secondary px4 py2
       />
       <div border="~ base rounded" flex="~ col gap-2" p4>
-        <OptionItem title="Error Correction" div>
+        <OptionItem title="错误纠正" div>
           <OptionSelectGroup
             v-model="state.ecc"
             :options="['L', 'M', 'Q', 'H']"
