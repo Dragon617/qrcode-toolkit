@@ -504,14 +504,14 @@ watch(
           @click="download()"
         >
           <div i-ri-download-line />
-          Download
+          下载
         </button>
         <button
           py2 text-sm text-button
           @click="sendCompare()"
         >
           <div i-ri-send-backward />
-          Send to Compare
+          发送进行比较
         </button>
         <button
           v-if="hasParentWindow"
