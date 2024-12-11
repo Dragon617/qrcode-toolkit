@@ -522,16 +522,16 @@ watch(
           Send to ControlNet
         </button>
         <div v-if="mayNotScannable" border="~ amber-6/60 rounded" bg-amber-5:10 px3 py2 text-sm text-amber-6>
-          This QR Code may or may not be scannable. Please verify before using.
+          此二维码可能可以扫描，也可能无法扫描。请在使用前进行验证。
         </div>
         <div v-if="hasNonCenteredMargin" border="~ yellow-6/60 rounded" bg-yellow-5:10 px3 py2 text-sm text-yellow-6>
           The <b>compare tab</b> does not support non-centered QR Code yet. If you generated with this QR Code, you'll need to verify the result manually.
         </div>
         <div v-if="state.transformPerspectiveX !== 0 || state.transformPerspectiveY !== 0 || state.transformScale !== 1" border="~ yellow-6/60 rounded" bg-yellow-5:10 px3 py2 text-sm text-yellow-6>
-          The <b>compare tab</b> does not support transformations. If you generated with this QR Code, you'll need to verify the result manually.
+           <b>比较选项卡</b> 不支持转换。如果您使用此二维码生成，则需要手动验证结果。
         </div>
         <div v-if="state.renderPointsType !== 'all'" border="~ indigo/60 rounded" bg-indigo-5:10 px3 py2 text-sm text-indigo>
-          This is a partial QR Code. It does <b>not</b> contain all the necessary data to be scannable.
+          这是部分二维码。它 <b>不包含</b> 可扫描的所有必要数据。
         </div>
       </div>
 
