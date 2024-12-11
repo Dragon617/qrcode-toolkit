@@ -377,7 +377,7 @@ watch(
         <OptionItem title="效果">
           <OptionSelectGroup
             v-model="state.effect"
-            :options="['none', 'crystalize', 'liquidify']"
+            :options="['无', '结晶', '液化']"
           />
         </OptionItem>
 
