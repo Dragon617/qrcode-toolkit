@@ -66,7 +66,7 @@ function apply() {
       </p>
 
       <div flex="~ col gap-2">
-        <OptionItem title="Grid">
+        <OptionItem title="网格">
           <OptionSlider v-model="gridSize" :min="0" :max="50" :step="1" />
         </OptionItem>
 
