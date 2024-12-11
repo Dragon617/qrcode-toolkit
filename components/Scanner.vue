@@ -330,7 +330,7 @@ const { isOverDropZone } = useDropZone(document.body, {
   <div flex="~ col gap-3">
     <div grid="~ cols-3 gap-2" mt8>
       <div text-center text-sm op50>
-        Upload
+        上传
       </div>
       <div text-center text-sm op50>
         Preprocessed
