@@ -215,7 +215,7 @@ watch(
           </label>
         </OptionItem>
 
-        <OptionItem title="Mask Pattern">
+        <OptionItem title="遮罩图案">
           <OptionSelectGroup
             v-model="state.maskPattern"
             :options="[-1, 0, 1, 2, 3, 4, 5, 6, 7]"
@@ -223,7 +223,7 @@ watch(
           />
         </OptionItem>
 
-        <OptionItem title="Rotate" div>
+        <OptionItem title="旋转" div>
           <OptionSelectGroup
             v-model="state.rotate"
             :options="[0, 90, 180, 270]"
@@ -233,7 +233,7 @@ watch(
 
         <div border="t base" my1 />
 
-        <OptionItem title="Pixel Style">
+        <OptionItem title="像素风格">
           <OptionSelectGroup
             v-model="state.pixelStyle"
             :options="PixelStyles"
