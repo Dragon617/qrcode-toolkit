@@ -241,7 +241,7 @@ watch(
           />
         </OptionItem>
 
-        <OptionItem :title="state.markers.length ? 'Marker 1' : 'Markers'">
+        <OptionItem :title="state.markers.length ? '标记 1' : '标记'">
           <div flex-auto />
           <button
             icon-button-sm
@@ -257,9 +257,9 @@ watch(
         </template>
         <template v-else>
           <SettingsMarkerStyle :state="state" nested />
-          <OptionItem title="Marker 2" />
+          <OptionItem title="标记 2" />
           <SettingsMarkerStyle :state="state.markers[0]" nested />
-          <OptionItem title="Marker 3" />
+          <OptionItem title="标记 3" />
           <SettingsMarkerStyle :state="state.markers[1]" nested />
           <div border="t base" my1 />
         </template>
