@@ -97,7 +97,7 @@ onMounted(() => {
     </button>
     <div flex-auto />
     <div>
-      <a href="https://antfu.me" target="_blank" op75 hover:underline hover:op100>Anthony Fu</a><span op50>'s QR Toolkit</span>
+      <a href="https://antfu.me" target="_blank" op75 hover:underline hover:op100>Anthony Fu</a><span op50>'s 二维码工具包</span>
     </div>
     <button
       flex="~ gap-1.5 items-center" ml2 text-sm text-button
