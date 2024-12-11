@@ -426,7 +426,7 @@ watch(
           @click="downloadState()"
         >
           <div i-ri-download-2-line />
-          Save state
+          保存状态
         </button>
         <button
 
