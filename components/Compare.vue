@@ -360,7 +360,7 @@ function toggleHighContrast() {
         <div border="l base" />
         <div flex="~ col gap-2 items-center">
           <div text-sm op75>
-            Source QR Code
+            来源二维码
           </div>
           <ImageDrop
             v-model="dataUrlQRCode"
