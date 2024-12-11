@@ -211,7 +211,7 @@ watch(
           />
           <label flex="~ gap-2 items-center" ml2>
             <OptionCheckbox v-model="state.boostECC" />
-            <span text-sm op75>Boost ECC</span>
+            <span text-sm op75>提升纠错码</span>
           </label>
         </OptionItem>
 
@@ -466,7 +466,7 @@ watch(
         <div v-if="qrcode" border="~ base rounded" p3 pl6 pr0 flex="~ col gap-2">
           <div grid="~ gap-1 cols-6 items-center">
             <div text-sm op50>
-              Size
+              尺寸
             </div>
             <div>
               {{ qrcode.size }}
@@ -478,7 +478,7 @@ watch(
               {{ qrcode.maskPattern }}
             </div>
             <div text-sm op50>
-              Version
+              版本
             </div>
             <div>
               {{ qrcode.version }}
@@ -486,13 +486,13 @@ watch(
           </div>
           <div v-if="generateQRCodeInfo" grid="~ gap-1 cols-[1.5fr_2fr_1fr_1.5fr] items-center">
             <div text-sm op50>
-              Dimension
+              尺寸
             </div>
             <div text-sm>
               {{ generateQRCodeInfo.width }} x {{ generateQRCodeInfo.height }}
             </div>
             <div text-sm op50>
-              Aspect
+              方面
             </div>
             <div text-sm>
               {{ getAspectRatio(generateQRCodeInfo.width, generateQRCodeInfo.height) }}
