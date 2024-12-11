@@ -28,7 +28,7 @@ function clear() {
     <template v-else>
       <div i-ri-upload-line text-lg op50 />
       <div text-center op50>
-        Upload
+        上传
       </div>
     </template>
     <button v-if="value" absolute right-0 top-0 z-20 m1 rounded-full bg-hex-8882 p1 op50 hover:op75 title="Remove image">
