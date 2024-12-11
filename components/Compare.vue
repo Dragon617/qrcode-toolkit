@@ -278,19 +278,19 @@ function toggleHighContrast() {
       </div>
 
       <div v-if="dataurl" border="~ base rounded" flex="~ col gap-2" p4>
-        <OptionItem title="Grayscale">
+        <OptionItem title="灰度">
           <OptionCheckbox v-model="state.grayscale" />
         </OptionItem>
-        <OptionItem title="Contrast" @reset="state.contrast = 100">
+        <OptionItem title="对比度" @reset="state.contrast = 100">
           <OptionSlider v-model="state.contrast" :min="0" :max="1000" :step="10" unit="%" :default="100" />
         </OptionItem>
-        <OptionItem title="Brightness" @reset="state.brightness = 100">
+        <OptionItem title="亮度" @reset="state.brightness = 100">
           <OptionSlider v-model="state.brightness" :min="0" :max="1000" :step="10" unit="%" :default="100" />
         </OptionItem>
-        <OptionItem title="Blur">
+        <OptionItem title="模糊">
           <OptionSlider v-model="state.blur" :min="0" :max="10" :step="1" unit="px" />
         </OptionItem>
-        <OptionItem title="Pixelate">
+        <OptionItem title="像素化">
           <OptionCheckbox v-model="state.pixelView" />
         </OptionItem>
 
@@ -308,15 +308,15 @@ function toggleHighContrast() {
             Align Grid
           </button>
         </OptionItem>
-        <OptionItem title="Grid Size" nested>
+        <OptionItem title="网格尺寸" nested>
           <OptionSlider v-model="state.gridSize" :min="10" :max="100" :step="1" />
         </OptionItem>
         <SettingsMargin v-model="state.gridMarginSize" />
         <template v-if="state.grid">
-          <OptionItem title="Opacity" nested>
+          <OptionItem title="不透明度" nested>
             <OptionSlider v-model="state.gridOpacity" :min="0" :max="1" :step="0.01" />
           </OptionItem>
-          <OptionItem title="Color" nested>
+          <OptionItem title="颜色" nested>
             <OptionColor v-model="state.gridColor" />
           </OptionItem>
         </template>
@@ -324,14 +324,14 @@ function toggleHighContrast() {
         <template v-if="dataUrlQRCode">
           <div border="t base" my1 />
 
-          <OptionItem title="Overlay">
+          <OptionItem title="覆盖图">
             <OptionCheckbox v-model="state.overlay" />
           </OptionItem>
           <template v-if="state.overlay">
-            <OptionItem title="Opacity" nested>
+            <OptionItem title="不透明度" nested>
               <OptionSlider v-model="state.overlayOpacity" :min="0" :max="1" :step="0.01" />
             </OptionItem>
-            <OptionItem title="Blend Mode" nested>
+            <OptionItem title="混合模式" nested>
               <OptionSelectGroup
                 v-model="state.overlayBlendMode"
                 :options="['normal', 'overlay', 'darken', 'lighten', 'difference']"
@@ -439,16 +439,16 @@ function toggleHighContrast() {
         </div>
         <div grid="~ cols-[250px_110px]">
           <div op50>
-            Average luminance
+            平均亮度
           </div><div>{{ (diff.avarageLuminance / 255 * 100).toFixed(1) }}%</div>
           <div op50>
-            Average luminance for Light
+            白色的平均亮度
           </div><div>{{ (diff.lightLuminance / 255 * 100).toFixed(1) }}%</div>
           <div op50>
-            Average luminance for Dark
+            黑暗的平均亮度
           </div><div>{{ (diff.darkLuminance / 255 * 100).toFixed(1) }}%</div>
           <div op50>
-            Mismatch nodes
+            不匹配节点
           </div><div>{{ diff.mismatchDark.length + diff.mismatchLight.length }} / {{ diff.mainSegments.length }}</div>
         </div>
 
@@ -462,7 +462,7 @@ function toggleHighContrast() {
               @pointerleave="highlightMismatch = false"
             >
               <div i-ri-bring-to-front />
-              Preview Correction
+              预览更正
             </button>
             <button
               text-sm text-button
@@ -470,14 +470,14 @@ function toggleHighContrast() {
               @pointerleave="highlightMismatch = false"
             >
               <div i-ri-search-2-line />
-              Highlight Mistmatch
+              突出显示不匹配
             </button>
             <button
               text-sm text-button
               @click="showDownloadDialog = true"
             >
               <div i-ri-download-line />
-              Download
+              下载
             </button>
           </div>
         </template>
