@@ -353,9 +353,9 @@ function toggleHighContrast() {
       <div grid="~ cols-[1fr_max-content_1fr] gap-4" border="~ base rounded" px2 py8>
         <div flex="~ col items-center gap-2">
           <div text-sm op75>
-            Target Image
+            目标图像
           </div>
-          <ImageDrop v-model="dataurl" title="目标图像" />
+          <ImageDrop v-model="dataurl" title="Target Image" />
         </div>
         <div border="l base" />
         <div flex="~ col gap-2 items-center">
