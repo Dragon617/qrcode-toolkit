@@ -28,7 +28,7 @@ const supportPixelStyle = computed(() => {
 </script>
 
 <template>
-  <OptionItem :title="[number, 'Pixel'].filter(Boolean).join(' ')" :nested="nested">
+  <OptionItem :title="[number, '像素'].filter(Boolean).join(' ')" :nested="nested">
     <OptionSelectGroup
       v-if="supportPixelStyle"
       v-model="state.markerStyle"
@@ -41,7 +41,7 @@ const supportPixelStyle = computed(() => {
     />
   </OptionItem>
 
-  <OptionItem :title="[number, 'Shape'].filter(Boolean).join(' ')" :nested="nested">
+  <OptionItem :title="[number, '形状'].filter(Boolean).join(' ')" :nested="nested">
     <OptionSelectGroup
       v-model="state.markerShape"
       :options="MarkerShapes"
@@ -49,7 +49,7 @@ const supportPixelStyle = computed(() => {
     />
   </OptionItem>
 
-  <OptionItem :title="[number, 'Inner'].filter(Boolean).join(' ')" :nested="nested">
+  <OptionItem :title="[number, '内部'].filter(Boolean).join(' ')" :nested="nested">
     <OptionSelectGroup
       v-model="state.markerInnerShape"
       :options="MarkerInnerShapes"
