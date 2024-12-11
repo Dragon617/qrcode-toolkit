@@ -402,7 +402,7 @@ watch(
           <OptionItem title="效果时机">
             <OptionSelectGroup
               v-model="state.effectTiming"
-              :options="['之前', '之后']"
+              :options="['before', 'after']"
             />
           </OptionItem>
         </template>
