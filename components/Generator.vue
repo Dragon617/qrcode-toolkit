@@ -279,37 +279,37 @@ watch(
           :full-customizable="true"
         />
 
-        <OptionItem title="Margin Noise" description="Add some random data points to the margin">
+        <OptionItem title="边缘噪声" description="Add some random data points to the margin">
           <OptionCheckbox v-model="state.marginNoise" />
         </OptionItem>
 
         <template v-if="state.marginNoise">
-          <OptionItem title="Noise Rate" nested description="Percentage of whether a black point should be placed">
+          <OptionItem title="噪声率" nested description="Percentage of whether a black point should be placed">
             <OptionSlider v-model="state.marginNoiseRate" :min="0" :max="1" :step="0.01" />
           </OptionItem>
 
           <SettingsRandomRange
             v-model="state.marginNoiseOpacity"
-            title="Opacity"
+            title="不透明度"
             nested
             :min="0"
             :max="1"
             :step="0.01"
           />
         </template>
-        <OptionItem title="Safe Space">
+        <OptionItem title="安全空间">
           <OptionSelectGroup
             v-model="state.marginNoiseSpace"
-            :options="['full', 'marker', 'minimal', 'extreme', 'none']"
+            :options="['完整的', '标记', '最少量的', '极端的', '无']"
           />
         </OptionItem>
-        <OptionItem title="Render Type">
+        <OptionItem title="渲染类型">
           <OptionSelectGroup
             v-model="state.renderPointsType"
-            :options="['all', 'function', 'data', 'guide', 'marker']"
+            :options="['所有', '函数', '数据', '指南', '标记']"
           />
         </OptionItem>
-        <OptionItem title="Seed">
+        <OptionItem title="种子">
           <input
             v-model.number="state.seed" type="number"
             border="~ base rounded"
@@ -323,7 +323,7 @@ watch(
             <div i-ri-refresh-line />
           </button>
         </OptionItem>
-        <OptionItem title="Background" div>
+        <OptionItem title="背景" div>
           <OptionColor v-if="state.backgroundImage?.startsWith('#')" v-model="state.backgroundImage" />
           <button v-else relative text-xs text-button>
             <img
