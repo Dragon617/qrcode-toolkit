@@ -355,7 +355,7 @@ function toggleHighContrast() {
           <div text-sm op75>
             Target Image
           </div>
-          <ImageDrop v-model="dataurl" title="Target image" />
+          <ImageDrop v-model="dataurl" title="目标图像" />
         </div>
         <div border="l base" />
         <div flex="~ col gap-2 items-center">
