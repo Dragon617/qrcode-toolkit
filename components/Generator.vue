@@ -264,7 +264,7 @@ watch(
           <div border="t base" my1 />
         </template>
 
-        <OptionItem v-if="qrcode?.version !== 1" title="Sub Markers">
+        <OptionItem v-if="qrcode?.version !== 1" title="子标记">
           <OptionSelectGroup
             v-model="state.markerSub"
             :options="MarkerSubShapes"
@@ -347,7 +347,7 @@ watch(
 
         <div border="t base" my1 />
 
-        <OptionItem title="Colors" div @reset="() => { state.lightColor = '#ffffff'; state.darkColor = '#000000' }">
+        <OptionItem title="颜色" div @reset="() => { state.lightColor = '#ffffff'; state.darkColor = '#000000' }">
           <div flex="~ gap-2">
             <OptionColor v-model="state.lightColor" />
             <OptionColor v-model="state.darkColor" />
@@ -360,21 +360,21 @@ watch(
 
         <div border="t base" my1 />
 
-        <OptionItem title="Min Version">
+        <OptionItem title="最小版本">
           <OptionSlider v-model="state.minVersion" :min="1" :max="state.maxVersion" :step="1" />
         </OptionItem>
 
-        <OptionItem title="Max Version">
+        <OptionItem title="最大版本">
           <OptionSlider v-model="state.maxVersion" :min="state.minVersion" :max="40" :step="1" />
         </OptionItem>
 
-        <OptionItem title="Pixel Size">
+        <OptionItem title="像素尺寸">
           <OptionSlider v-model="state.scale" :min="1" :max="50" :step="1" unit="px" />
         </OptionItem>
 
         <div border="t base" my1 />
 
-        <OptionItem title="Effect">
+        <OptionItem title="效果">
           <OptionSelectGroup
             v-model="state.effect"
             :options="['none', 'crystalize', 'liquidify']"
@@ -382,24 +382,24 @@ watch(
         </OptionItem>
 
         <template v-if="state.effect === 'crystalize'">
-          <OptionItem title="Radius" nested>
+          <OptionItem title="半径" nested>
             <OptionSlider v-model="state.effectCrystalizeRadius" :min="1" :max="20" :step="0.5" />
           </OptionItem>
         </template>
         <template v-if="state.effect === 'liquidify'">
-          <OptionItem title="Distort Radius" nested>
+          <OptionItem title="扭曲半径" nested>
             <OptionSlider v-model="state.effectLiquidifyDistortRadius" :min="1" :max="40" :step="1" />
           </OptionItem>
-          <OptionItem title="Blur Radius" nested>
+          <OptionItem title="模糊半径" nested>
             <OptionSlider v-model="state.effectLiquidifyRadius" :min="1" :max="40" :step="1" />
           </OptionItem>
-          <OptionItem title="Threshold" nested @reset="state.effectLiquidifyThreshold = 128">
+          <OptionItem title="阈值" nested @reset="state.effectLiquidifyThreshold = 128">
             <OptionSlider v-model="state.effectLiquidifyThreshold" :min="1" :max="254" :step="1" unit="/256" />
           </OptionItem>
         </template>
 
         <template v-if="state.effect !== 'none'">
-          <OptionItem title="Effect Timing">
+          <OptionItem title="效果时机">
             <OptionSelectGroup
               v-model="state.effectTiming"
               :options="['before', 'after']"
@@ -409,14 +409,14 @@ watch(
 
         <div border="t base" my1 />
 
-        <OptionItem title="Transform" />
-        <OptionItem title="Perspective X" nested @reset="state.transformPerspectiveX = 0">
+        <OptionItem title="变换" />
+        <OptionItem title="视角 X" nested @reset="state.transformPerspectiveX = 0">
           <OptionSlider v-model="state.transformPerspectiveX" :min="-0.5" :max="0.5" :step="0.01" :default="0" />
         </OptionItem>
-        <OptionItem title="Perspective Y" nested @reset="state.transformPerspectiveY = 0">
+        <OptionItem title="视角 Y" nested @reset="state.transformPerspectiveY = 0">
           <OptionSlider v-model="state.transformPerspectiveY" :min="-0.5" :max="0.5" :step="0.01" :default="0" />
         </OptionItem>
-        <OptionItem title="Scale" nested @reset="state.transformScale = 1">
+        <OptionItem title="缩放比例" nested @reset="state.transformScale = 1">
           <OptionSlider v-model="state.transformScale" :min="0.5" :max="2" :step="0.01" :default="1" />
         </OptionItem>
       </div>
