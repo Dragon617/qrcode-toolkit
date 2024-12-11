@@ -372,7 +372,7 @@ function toggleHighContrast() {
             @click="sendQRCodeToCompare(fullState)"
           >
             <div i-ri-qr-code-line />
-            Apply from generator
+            从生成器中应用
           </button>
         </div>
       </div>
