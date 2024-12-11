@@ -199,7 +199,7 @@ watch(
     <div flex="~ col gap-2">
       <textarea
         v-model="state.text"
-        placeholder="Text to encode"
+        placeholder="输入文本"
         border="~ base rounded"
         bg-secondary px4 py2
       />
