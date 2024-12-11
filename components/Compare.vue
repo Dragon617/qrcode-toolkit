@@ -296,7 +296,7 @@ function toggleHighContrast() {
 
         <div border="t base" my1 />
 
-        <OptionItem title="Grid" description="Toggle Grid View">
+        <OptionItem title="网格" description="Toggle Grid View">
           <OptionCheckbox v-model="state.grid" />
           <div flex-auto />
           <button
@@ -305,7 +305,7 @@ function toggleHighContrast() {
             @click="showGridHelper = true"
           >
             <div i-ri-artboard-2-line />
-            Align Grid
+            对齐网格
           </button>
         </OptionItem>
         <OptionItem title="网格尺寸" nested>
