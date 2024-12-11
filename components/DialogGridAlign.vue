@@ -61,8 +61,8 @@ function apply() {
       </div>
 
       <p>
-        Slide the Grid slider to make the red grid lines align with all the pixel.
-        Slide the Margin slider to make the green box align with the QR Code body.
+        滑动网格滑块，使红色网格线与所有像素对齐。
+        滑动边缘滑块，使绿色框与二维码主体对齐。
       </p>
 
       <div flex="~ col gap-2">
