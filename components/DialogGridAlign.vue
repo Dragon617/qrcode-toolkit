@@ -75,10 +75,10 @@ function apply() {
 
       <div flex="~ gap-2 justify-end" mt-5>
         <button px5 op75 text-button @click="cancel()">
-          Cancel
+          取消
         </button>
         <button w-25 px5 text-button @click="apply()">
-          Apply
+          应用
         </button>
       </div>
     </div>
