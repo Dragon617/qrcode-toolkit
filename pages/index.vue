@@ -34,7 +34,7 @@ const buildTime = useTimeAgo(config.public.buildTime as any)
 
       <div mt-15 flex="~ col gap-2">
         <div>
-          <span op50>Anthony Fu's </span> <span font-600 op75>QR</span><span font-400 op65> Toolkit</span>
+          <span op50>Anthony Fu's </span> <span font-600 op75>二维码</span><span font-400 op65> 工具包</span>
         </div>
         <div flex="~ gap-1 items-center">
           <span i-ri-arrow-right-line ml1 inline-block h-1em op50 /><a op75 hover:op100 href="https://antfu.me/posts/ai-qrcode-101" target="_blank">How to Generate AI QR Code</a><br>
