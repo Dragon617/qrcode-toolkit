@@ -377,16 +377,16 @@ watch(
         <OptionItem title="效果">
           <OptionSelectGroup
             v-model="state.effect"
-            :options="['无', '结晶', '液化']"
+             :options="['none', 'crystalize', 'liquidify']"
           />
         </OptionItem>
 
-        <template v-if="state.effect === '结晶'">
+        <template v-if="state.effect === 'crystalize'">
           <OptionItem title="半径" nested>
             <OptionSlider v-model="state.effectCrystalizeRadius" :min="1" :max="20" :step="0.5" />
           </OptionItem>
         </template>
-        <template v-if="state.effect === '液化'">
+        <template v-if="state.effect === 'liquidify'">
           <OptionItem title="扭曲半径" nested>
             <OptionSlider v-model="state.effectLiquidifyDistortRadius" :min="1" :max="40" :step="1" />
           </OptionItem>
@@ -398,7 +398,7 @@ watch(
           </OptionItem>
         </template>
 
-        <template v-if="state.effect !== '无'">
+        <template v-if="state.effect !== 'none'">
           <OptionItem title="效果时机">
             <OptionSelectGroup
               v-model="state.effectTiming"
