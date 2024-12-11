@@ -63,7 +63,7 @@ function toggleFull() {
 
 <template>
   <template v-if="(typeof margin === 'number')">
-    <OptionItem title="Margin" div @reset="margin = 2">
+    <OptionItem title="边缘" div @reset="margin = 2">
       <OptionSlider v-model="margin" :min="0" :max="20" :step="1" />
       <button
         icon-button-sm
@@ -74,7 +74,7 @@ function toggleFull() {
     </OptionItem>
   </template>
   <template v-else>
-    <OptionItem title="Margin" div @reset="margin = { top: 2, left: 2, right: 2, bottom: 2 }">
+    <OptionItem title="边缘" div @reset="margin = { top: 2, left: 2, right: 2, bottom: 2 }">
       <div flex-auto />
       <button
         v-if="fullCustomizable"
