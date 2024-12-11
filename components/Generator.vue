@@ -472,7 +472,7 @@ watch(
               {{ qrcode.size }}
             </div>
             <div text-sm op50>
-              Mask
+              面罩/块
             </div>
             <div>
               {{ qrcode.maskPattern }}
@@ -486,13 +486,13 @@ watch(
           </div>
           <div v-if="generateQRCodeInfo" grid="~ gap-1 cols-[1.5fr_2fr_1fr_1.5fr] items-center">
             <div text-sm op50>
-              尺寸
+              像素尺寸
             </div>
             <div text-sm>
               {{ generateQRCodeInfo.width }} x {{ generateQRCodeInfo.height }}
             </div>
             <div text-sm op50>
-              方面
+              方面/比例
             </div>
             <div text-sm>
               {{ getAspectRatio(generateQRCodeInfo.width, generateQRCodeInfo.height) }}
