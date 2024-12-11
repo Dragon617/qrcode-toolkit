@@ -492,7 +492,7 @@ watch(
               {{ generateQRCodeInfo.width }} x {{ generateQRCodeInfo.height }}
             </div>
             <div text-sm op50>
-              方面/比例
+              比例
             </div>
             <div text-sm>
               {{ getAspectRatio(generateQRCodeInfo.width, generateQRCodeInfo.height) }}
