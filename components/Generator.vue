@@ -433,7 +433,7 @@ watch(
           relative text-sm op75 text-button hover:op100
         >
           <div i-ri-upload-2-line />
-          Load state
+          加载状态
           <input
             type="file" accept="application/json"
             absolute bottom-0 left-0 right-0 top-0 z-10
