@@ -447,7 +447,7 @@ watch(
           @click="reset()"
         >
           <div i-ri-delete-bin-6-line />
-          Reset State
+          重置状态
         </button>
       </div>
     </div>
