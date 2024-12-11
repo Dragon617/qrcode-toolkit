@@ -253,7 +253,7 @@ watch(
         </OptionItem>
 
         <template v-if="!state.markers.length">
-          <SettingsMarkerStyle :state="state" nested number="Marker" />
+          <SettingsMarkerStyle :state="state" nested number="标记" />
         </template>
         <template v-else>
           <SettingsMarkerStyle :state="state" nested />
