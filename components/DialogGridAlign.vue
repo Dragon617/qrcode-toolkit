@@ -62,11 +62,13 @@ function apply() {
 
       <p>
         滑动网格滑块，使红色网格线与所有像素对齐。
+      </p>
+      <p>
         滑动边缘滑块，使绿色框与二维码主体对齐。
       </p>
 
       <div flex="~ col gap-2">
-        <OptionItem title="Grid">
+        <OptionItem title="网格">
           <OptionSlider v-model="gridSize" :min="0" :max="50" :step="1" />
         </OptionItem>
 
